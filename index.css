@@ -184,6 +184,7 @@ p{
 .images .image img{
     margin: 20px 100px;
     height: 400px;
+    transition: transform 420ms;
 }
 .images .image img:hover{
         transform:scale(1.3);

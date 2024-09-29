@@ -185,7 +185,7 @@ p{
     margin: 20px 100px;
     height: 400px;
 }
-.images .image img{
+.images .image img:hover{
         transform:scale(1.3);
 }
 .images .content h1{

@@ -3,6 +3,7 @@ header .nav{
     background-color: #fff;
     display: flex;
     position: fixed;
+    width: 100%;
 }
 header .nav .contents{
     display: flex;
@@ -60,6 +61,7 @@ nav{
     background-color: #111;
     position: fixed;
     margin: 102px 0;
+    width: 100%;
 }
 nav{
     height: 10%;
@@ -149,6 +151,7 @@ nav .content .contact:hover{
 }
 .cards{
     display: flex;
+    border: 2px solid black;
 }
 span{
     text-align: center;

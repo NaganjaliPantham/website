@@ -295,3 +295,42 @@ p{
     background-color: #111;
     padding-top: 5px;
 }
+footer{
+    padding: 50px 4% 10px ;
+    color: #666;
+}
+footer h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 50px 0;
+    color: #666;
+}
+footer .row{
+    display: flex;
+    align-items: start;
+    padding: 10px 0px;
+}
+footer .row .col{
+    margin: 10px 50px;
+}
+footer .row .col a{
+    text-decoration: none;
+    color: #666;
+    font-size: 0.8rem;
+    padding: 8px;
+    display: block;
+}
+footer button{
+    margin: 0 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 100px;
+}
+footer button i{
+    border: none;
+}
+footer button select{
+    border: none;
+}

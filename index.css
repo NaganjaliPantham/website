@@ -1,85 +1,106 @@
-body{
+/* General Styles */
+body, html {
     margin: 0;
     padding: 0;
-    background-color:rgb(243, 117, 138) ;
-    margin: 20% 20%;
-}
-svg path:nth-child(1) {
-    stroke-dasharray: 360px;
-    stroke-dashoffset: 360px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(2) {
-    stroke-dasharray: 300px;  
-    stroke-dashoffset: 300px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(3) {
-    stroke-dasharray: 310px;  
-    stroke-dashoffset: 310px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(4) {
-    stroke-dasharray: 300px;
-    stroke-dashoffset: 300px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(5) {
-    stroke-dasharray: 300px;
-    stroke-dashoffset: 300px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(6) {
-    stroke-dasharray: 480px;
-    stroke-dashoffset: 480px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(7) {
-    stroke-dasharray: 380px;
-    stroke-dashoffset: 380px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(8) {
-    stroke-dasharray: 360px;
-    stroke-dashoffset: 360px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(9) {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: 200px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(10) {
-    stroke-dasharray: 280px;
-    stroke-dashoffset: 280px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(11) {
-    stroke-dasharray: 280px;
-    stroke-dashoffset: 280px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(12) {
-    stroke-dasharray: 300px;
-    stroke-dashoffset: 300px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(13) {
-    stroke-dasharray: 240px;
-    stroke-dashoffset: 240px;
-    animation: a 5s linear forwards;
-}
-svg path:nth-child(14) {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: 200px;
-    animation: a 5s linear forwards;
-}
-@keyframes a{
-    0%{
-        stroke-dashoffset: 0;
+    height: 100%;
+    background-color: #f5f5f5; /* Light background */
+    font-family: 'Georgia', serif; /* Elegant font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-container {
+    text-align: center;
+  }
+  
+  /* Pencil Icon */
+  .pencil-icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto 10px;
+    animation: bounce 1.5s ease-in-out infinite;
+  }
+  
+  .pencil-icon::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background-color: #ffcc00; /* Pencil body color */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  .pencil-icon::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #ff6666; /* Pencil tip color */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  /* Brand Name */
+  .brand-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out infinite;
+  }
+  
+  /* Loading Bar */
+  .loading-bar {
+    width: 200px;
+    height: 4px;
+    background-color: #e0e0e0; /* Light gray background for the bar */
+    border-radius: 2px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: #333; /* Dark color for the progress */
+    animation: load 2.5s ease-in-out infinite;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
     }
-    100%{
-        stroke-dashoffset: 100%;
-        stroke-dasharray: 0;
+    50% {
+      transform: translateY(-10px);
     }
-}
+  }
+  
+  @keyframes fadeIn {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }

@@ -1,138 +1,174 @@
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header{
+    height: 50%;
+    
 }
-
-/* Header and Navbar */
-header {
-    width: 100%;
-    background-color: rgb(158, 7, 7);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-.logo{
+header .nav{
+    background-color: #fff;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
 }
-.logo .store{
-    color: #f0e8e0;
-    font-size: 25px;
-    font-weight: 600;
-}
+header .nav .contents{
+    display: flex;
 
-.nav {
+}
+header .contents i{
+    margin: 10px;
+}
+header .contents{
+    margin: 10px;
+    justify-content: space-between;
+}
+header .contents .search{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
+    background-color: transparent;
+    color: #111;
+    margin: 5px 50px 5px 10px;
+    padding: 2px 2px ;
+    border: 1px solid #111;
+    border-radius: 5px;
+    width: 500px;
+    height: 70%;
 }
-
-.logo img {
-    max-width:10%; /* Adjust as needed */
-    height: auto;
+header .contents .account{
+    background-color: transparent;
+    color: #111;
+    padding: 2px 4px ;
+    width: 50px;
+    margin: 10px 10px 10px 30px;
 }
-
-.contents {
+header .contents .wishlist{
+    background-color: transparent;
+    color: #111;
+    padding: 2px 4px ;
+    width: 50px;
+    margin: 10px;
+}
+header .contents .cart{
+    background-color: transparent;
+    color: #111;
+    padding: 2px 4px ;
+    width: 50px;
+    margin: 10px;
+}
+header .logo img{
+    max-width: 30%;
+}
+header .contents .search input{
+    background-color:#fff;
+    border: #fff;
+    border-radius: 5px;
+    color: #111;
+    width: 480px;
+}
+nav{
+    background-color: #111;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+nav{
+    margin-top: 5%;
+    height: 10%;
+    size: 100%;
+}
+nav .content {
     display: flex;
-    align-items: center;
-    gap: 30px; /* Space between items */
+    justify-content: space-between;
+    color:#fff;
 }
-.login{
+nav .content .home a{
+    color: #fff;
+}
+nav .content .home {
     background-color: transparent;
-    padding: 5px 10px ;
-    border: 1px solid #fff;
-    border-radius: 2px;
-    
+    color: #fff;
+    padding: 0px 0px ;
+    width: 90px;
+    font-size: 20px;
+    margin:15px 159px 5px 40px ;
 }
-.login:hover {
-    background-color: #f08a4f;
-    color: #111;
-}
-.signup{
-    background-color: transparent;
-    padding: 5px 10px ;
-    border: 1px solid #fff;
-    border-radius: 2px;
-    
-}
-.signup:hover{
-    background-color: #f08a4f;
-    color: #111;
-}   
-
-.contents a {
+nav .content .home a{
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    transition: all 0.3s ease;
 }
-
-.contents a:hover {
-    color: #ffd700; /* Change to your preferred hover color */
-    transform: scale(1.1);
-}
-
-/* Search Bar */
-.search {
-    display: flex;
-    align-items: center;
+nav .content .home a:hover{
+    transform: scale(1.2);
     background-color: #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 20px; /* Adjust as needed */
+    color: #0f0e0e;
 }
-
-.search input {
-    border: none;
-    outline: none;
-    width: 200px; /* Adjust as needed */
-    padding: 5px;
+nav .content .login a{
+    color: #fff;
+    text-decoration: none;
 }
-
-.search i {
-    color: #646262;
-    cursor: pointer;
+nav .content .login a:hover{
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #0f0e0e;
 }
-
-/* Icons */
-.account, .wishlist, .cart {
+nav .content .login{
+     background-color: transparent;
+    color: #fffbfb;
+    padding: 0px 8px ;
+    width: 90px;
     font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin:15px 159px 5px 40px ;
 }
-
-.account:hover, .wishlist:hover, .cart:hover {
-    color: #ffd700; /* Change to your preferred hover color */
+nav .content .signup a{
+    color: #fff;
+    text-decoration: none;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .contents {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .search {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .search input {
-        width: 100%;
-    }
+nav .content .signup a:hover{
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #0f0e0e;
+}
+nav .content .signup {
+    background-color: transparent;
+    color: #fffbfb;
+    padding: 0px 8px ;
+    width: 90px;
+    font-size: 20px;
+    margin:15px 159px 5px 40px ;
+}
+nav .content .about a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .content .about a:hover{
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #0f0e0e;
+}
+nav .content .about{
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 8px ;
+    width: 90px;
+    font-size: 20px;
+    margin:15px 159px 5px 40px ;
+}
+nav .content .contact a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .content .contact a:hover{
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #0f0e0e;
+}
+nav .content .contact{
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 8px ;
+    margin: 0 20px 0 0;
+    width: 90px;
+    font-size: 20px;
+    margin:15px 20px 5px 20px ;
 }
 .video video{
-    margin-top: 40px;
      width: 100%;
      transition: transform;
 }
@@ -163,7 +199,6 @@ p{
 @keyframes loop {
     0% { 
         transform: translateX(0%); 
-        
     }
     100% { 
         transform: translateX(-700%); 
@@ -193,16 +228,16 @@ p{
 }
 
 footer{
-    background-color: rgb(158, 7, 7);
+    background-color: #111;
     padding: 50px 4% 10px ;
-    color: #858383;
+    color: #666;
 }
 footer h1{
     font-size: 1.2rem;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 0 50px 0;
-    color: #858383;
+    color: #666;
 }
 footer .row{
     display: flex;
@@ -214,7 +249,7 @@ footer .row .col{
 }
 footer .row .col a{
     text-decoration: none;
-    color: #858383;
+    color: #666;
     font-size: 0.8rem;
     padding: 8px;
     display: block;
@@ -279,10 +314,9 @@ p{
 }
 .pen img{
     width: 100%;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
-    margin: 4%  0 0;
-
+    margin: 9%  0 0;
 }
 .pen p{
     margin: -33% 10% 17% 50%;
@@ -386,7 +420,6 @@ p{
 .card:nth-child(16) { animation-delay: 1.6s; }
 .card:nth-child(17) { animation-delay: 1.7s; }
 .card:nth-child(18) { animation-delay: 1.8s; }
-/* General Styles for Images */
 .images {
     display: flex;
     justify-content: space-between;
@@ -481,8 +514,4 @@ p{
 .border a {
     text-decoration: none;
     color: #fcfbfb;
-}
-.card-title1 a{
-    text-decoration: none;
-    color: #070707;
 }
